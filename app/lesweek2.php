@@ -27,7 +27,7 @@
         echo "<p>De prijs van de chocoladereep is $prijs</p>";
 
         /* Hieronder staat het datatype boolean (een boolean kan twee waarden aannemen true of false) */
-        $wordIkMiljonair = false;
+        $wordIkMiljonair = true;
         echo "<p>Word ik miljonair over 30 jaar, antwoord: $wordIkMiljonair</p>";
 
         // Hieronder een voorbeeld van een samengesteld datatype het array (meerdere waarden in een variabele)
@@ -89,6 +89,81 @@
         echo "<p>Mijn adres is: {$persoonsgegevens['straatnaam']} {$persoonsgegevens['huisnummer']}</p>";
         echo "<p>Mijn postcode is: {$persoonsgegevens['postcode']}</p>";
         echo "<p>Mijn woonplaats is: {$persoonsgegevens['woonplaats']}</p>";
+
+
+        /**
+         * Maaak een associatief array met daarin 8 van je favoriete sneakers 
+         * inclusief prijs en geef deze weer in  een lijst
+         * 
+         * Verwachte output:
+         * 
+         * ==========================
+         * Mijn favoriete sneakers
+         * ==========================
+         * schoen 1: Addidas - 234,50
+         * Schoen 2: ........
+         * enz...
+         * schoen 8: Nike - 199,00
+         * 
+         */
+
+        $sneakers = [
+            'Adidas Galaxy7' => 234.50,
+            'Converse'       => 221.30,
+            'Reebok'         => 198.00,
+            'Puma'           => 24.95,
+            'Vans'           => 133.00,
+            'Asics'          => 210.45,
+            'Nike'           => 457.10,
+            'New Balance'    => 80.34
+        ];
+
+        echo "<p class='test'>===============</p>";
+        echo "Mijn favoriete sneakers";
+        echo "<p>===============</p>";
+
+        echo "<p>Schoen 1: Addidas: {$sneakers['Adidas Galaxy7']}</p>";
+        echo "<p>Schoen 2: Converse: {$sneakers['Converse']}</p>";
+        echo "<p>Schoen 3: Reebok: {$sneakers['Reebok']}</p>";
+        echo "<p>Schoen 4: Puma: {$sneakers['Puma']}</p>";
+        echo "<p>Schoen 5: Vans: {$sneakers['Vans']}</p>";
+        echo "<p>Schoen 6: Asics: {$sneakers['Asics']}</p>";
+        echo "<p>Schoen 7: Nike: {$sneakers['Nike']}</p>";
+        echo "<p>Schoen 8: New Balance: {$sneakers['New Balance']}</p>";
+
+        /**
+         * Maak een associatief array met de top 5 snelste auto's ter wereld
+         *  met daarin de topsnelheid
+         * 
+         * Verwachte output:
+         * *******************************
+         * Top 5 snelste auto's ter wereld
+         * *******************************
+         * 1. Bugatti Veyron => 456 km/h
+         * 2. ...
+         *     enz...
+         * 5. Rimec Nevera => 415 km/h 
+         */
+
+        $fastestCars = [
+            'Koenigsegg Jesko Absolut' => 531,
+            'Bugatti Chiron' => 490,
+            'SSC Tuatara' => 475,
+            'Hennessey Venom F5' => 437,
+            'Rimec Nevera' => 415
+        ];
+
+        echo "<p>*****************************</p>";
+        echo "<p>Top 5 snelste auto's</p>";
+        echo "<p>*****************************</p>";
+        echo "<ol>";
+        echo "<li>Koenigsegg Jesko Absolut => {$fastestCars['Koenigsegg Jesko Absolut']}</li>";
+        echo "<li>Bugatti Chiron => {$fastestCars['Bugatti Chiron']}</li>";
+        echo "<li>SSC Tuatara => {$fastestCars['SSC Tuatara']}</li>";
+        echo "<li>Hennessey Venom F5 => {$fastestCars['Hennessey Venom F5']}</li>";
+        echo "<li>Rimec Nevera => {$fastestCars['Rimec Nevera']}</li>";
+        
+        echo "</ol>";
 
         ?>
     
