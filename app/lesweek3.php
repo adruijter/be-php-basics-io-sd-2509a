@@ -136,6 +136,41 @@
         }
 
 
+        /**
+         * Do-while wordt minimaal 1 keer uitgevoerd, ook al is de voorwaarde niet waar.
+         */
+
+        $index = 1;
+        do {
+            echo "<p>De index is nu: $index</p>";
+            $index++;
+        } while($index <= 10);
+
+
+        /**
+         * Maak een do-while loop die de getallen van 1 t/m 20 bij elkaar optelt
+         */
+
+        $index = 1;
+        $result = 0;
+        do {
+            // Tel steeds de waarde van index bij het resultaat op
+            $result = $result + $index;
+
+            // Hoog de index op met 1
+            $index++;
+
+        } while($index <= 20);
+
+        echo "De getallen 1 t/m 20 bij elkaar opgeteld is: $result";
+    ?>
+    <hr>
+    <?php
+        $hoofdsteden = [
+            'Amsterdam' => 750,
+            'Berlijn' => 788,
+            'New York' => 401
+        ];
     ?>
 
 </body>
